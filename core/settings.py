@@ -29,6 +29,7 @@ SECRET_KEY = "django-insecure-6!%r$z(d4j4dqx6&fks78!ca_bj8kxp52pv09d!k5g==3&%doj
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "hardworkapi-2.onrender.com",
     "hardworkapi-1.onrender.com",
     "127.0.0.1",
     "localhost"
