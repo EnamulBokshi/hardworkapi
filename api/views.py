@@ -253,3 +253,14 @@ class QuoteCreate(generics.CreateAPIView):
         )
         return Response({"message":"Qote Gotted"},status = status.HTTP_201_CREATED)
 
+class QuoteDelete(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = api_serializer.QuoteSerializer
+    permission_classes  = [AllowAny]
+    def get_object(self):
+       id = self.kwargs['pk']
+       q = api_models.Quote.objects.get(id = id)
+       return q
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        instance.delete()
+        return Response({"message":"Quote Deleted succesfully!!!"},status=status.HTTP_204_NO_CONTENT)

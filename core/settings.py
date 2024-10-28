@@ -43,12 +43,14 @@ CORS_ALLOWED_ORIGINS = [
     'http://ancientsbuilders.com',
     'https://abc.ancientsbuilders.com',
     'https://ancientsbuilders.com',
+    'http://localhost:5173'
 
 
 ]
 CSRF_TRUSTED_ORIGINS = [
        'http://abc.ancientsbuilders.com',
        'https://abc.ancientsbuilders.com',
+       'http://localhost:5173'
 
     ]
 # Application definition

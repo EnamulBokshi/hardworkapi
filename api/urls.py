@@ -38,4 +38,5 @@ urlpatterns = [
     # Others
     path("quote/quote-view/",api_views.DashboardQuoteAPIView.as_view()),
     path("quote/create-quote/",api_views.QuoteCreate.as_view()),
+    path("quote/delete/<pk>/",api_views.QuoteDelete.as_view())
 ]
