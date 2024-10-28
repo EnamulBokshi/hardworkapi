@@ -32,10 +32,14 @@ ALLOWED_HOSTS = [
     "hardworkapi-2.onrender.com",
     "hardworkapi-1.onrender.com",
     "127.0.0.1",
-    "localhost"
+    "localhost",
+    "184.168.113.249"
 ]
 
-
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    '184.168.113.249'
+]
 # Application definition
 
 INSTALLED_APPS = [
