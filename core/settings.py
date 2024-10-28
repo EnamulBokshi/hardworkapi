@@ -39,7 +39,11 @@ ALLOWED_HOSTS = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://184.168.113.249',
-    'https://abc.ancientsbuilders.com/'
+    'abc.ancientsbuilders.com',
+    'ancientsbuilders.com',
+    'www.ancientsbuilders.com',
+    'www.abc.ancientsbuilders.com',
+
 ]
 # Application definition
 
